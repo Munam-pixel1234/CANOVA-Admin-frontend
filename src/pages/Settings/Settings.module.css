@@ -1,0 +1,41 @@
+/* ===== PAGE WRAPPER ===== */
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* ===== MAIN AREA ===== */
+.main {
+  flex: 1;
+  padding: 12px 28px;
+  background: #ffffff;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  font-size: 18px;
+  font-weight: 400;
+  color: #616161;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* ===== TOP LINE ===== */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin-top: 44px;
+}
+
+/* ===== SETTINGS CARD ===== */
+.card {
+  width: 794px;
+  height: 525px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 40px;
+  border: 1px solid #d9d9d9;
+}

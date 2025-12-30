@@ -1,0 +1,140 @@
+/* ===== PAGE WRAPPER ===== */
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  flex: 1;
+  padding: 32px 48px;
+}
+
+/* ===== TOP BAR ===== */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  font-size: 18px;
+  font-weight: 500;
+  color: #616161;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.actionBtn {
+  width: 120px;
+  height: 30px;
+  border-radius: 12px;
+  background: #d9d9d9;
+  border: none;
+  font-size: 16px;
+  color: #636060;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* ===== TABLE CARD (LEADS BOX) ===== */
+.tableCard {
+  width: 1005px;
+  height: 409px;
+  border-radius: 20px;
+  border: 1px solid #d0d0d0;
+  padding: 16px;
+
+  /* ONLY the leads table scrolls */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ===== TABLE HEADER ===== */
+.tableHeader {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  font-weight: 500;
+  font-size: 14px;
+  color: #616161;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9d9d9;
+
+  /* Sticky header inside scroll box */
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 2;
+}
+
+/* ===== TABLE ROW ===== */
+.tableRow {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  padding: 12px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #ededed;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty {
+  padding: 24px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ===== PAGINATION (FOOTER – OUTSIDE BOX) ===== */
+.pagination {
+  width: 1005px;        /* same width as table */
+  margin-top: 16px;     /* space below leads box */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== PAGINATION BUTTONS ===== */
+.pageBtn {
+  width: 96px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== PAGE NUMBERS ===== */
+.pageNumbers {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.pageNumbers span {
+  cursor: pointer;
+  color: #616161;
+  font-size: 14px;
+}
+
+/* ===== ACTIVE PAGE ===== */
+.activePage {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}

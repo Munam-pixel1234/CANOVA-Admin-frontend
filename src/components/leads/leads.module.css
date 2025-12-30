@@ -1,0 +1,82 @@
+/* ===== MODAL OVERLAY ===== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ===== MODAL BOX ===== */
+.modal {
+  width: 516px;
+  height: 625px;
+  background: #ffffff;
+  border-radius: 13px;
+  padding: 14px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.modalHeader h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modalHeader button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000000;
+}
+
+/* ===== FORM ===== */
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modalForm label {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+/* ===== INPUT ===== */
+.modalForm input {
+  width: 415px;
+  height: 32px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* ===== SAVE BUTTON ===== */
+.saveBtn {
+  margin-top: 24px;
+  width: 100px;
+  height: 35px;
+  border-radius: 13px;
+  background: #d9d9d9;
+  border: none;
+  color: #636060;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+

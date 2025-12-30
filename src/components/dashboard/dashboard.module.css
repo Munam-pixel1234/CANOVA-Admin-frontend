@@ -1,0 +1,120 @@
+.kpiCard {
+  width: 250px;
+  height: 80px;
+  border-radius: 16px;
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.kpiTitle {
+  font-size: 16px;
+  color: #616161;
+}
+
+.kpiValue {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+.chartCard {
+  width: 830px;
+  height: 190px;
+  border-radius: 16px;
+  border: 1px solid #d1d1d1;
+  padding: 16px;
+}
+.chartCard h3 {
+  font-size: 16px;
+  color: #616161;
+  margin-bottom: 8px;
+}
+
+
+
+.activityCard {
+  width: 249px;
+  height: 190px;
+  border-radius: 16px;
+  border: 1px solid #d1d1d1;
+  padding: 16px;
+}
+
+.activityCard h3 {
+  font-size: 16px;
+  color: #616161;
+}
+
+.activityList {
+  margin-top: 12px;
+  max-height: 90px;   /* ⬅️ FIX: fits inside 150px card */
+  overflow-y: auto;   /* scrollbar works correctly */
+}
+
+
+
+.salesList {
+  width: 1034px;
+  height: 200px;
+  border-radius: 16px;
+  border: 1px solid #d1d1d1;
+  padding: 16px;
+  overflow: hidden; /* ⬅️ stop outer scroll */
+}
+
+/* wrapper for scrolling rows */
+.salesList table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.salesList thead {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.salesList tbody {
+  display: block;
+  max-height: 140px; /* ⬅️ scrollable body */
+  overflow-y: auto;
+}
+
+.salesList thead tr,
+.salesList tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.salesList th {
+  font-size: 12px;
+  color: #4a5a7a;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.salesList td {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.activeStatus {
+  background: #e6f7ef;
+  color: #1fa463;
+  padding: 4px 10px;
+  border-radius: 11px;
+  font-size: 12px;
+}
+
+/* REQUIRED by SRD */
+.inactiveStatus {
+  background: #fdeaea;
+  color: #d93025;
+  padding: 4px 10px;
+  border-radius: 11px;
+  font-size: 12px;
+}

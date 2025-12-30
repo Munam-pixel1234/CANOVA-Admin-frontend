@@ -1,0 +1,113 @@
+/* ===============================
+   Global Reset
+   =============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   Base HTML & Body
+   =============================== */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f6fa; /* neutral background */
+  color: #1f2937; /* dark text */
+}
+
+/* ===============================
+   Root App Container
+   =============================== */
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===============================
+   Links
+   =============================== */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===============================
+   Buttons (Base only)
+   =============================== */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* ===============================
+   Inputs
+   =============================== */
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ===============================
+   Lists
+   =============================== */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===============================
+   Utility Classes
+   =============================== */
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===============================
+   Scrollbar (optional, safe)
+   =============================== */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
